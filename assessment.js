@@ -38,12 +38,12 @@ assessmentButton.onclick = () => {
   const anchor = document.createElement('a');
   const hrefValue =
     'https://twitter.com/intent/tweet?button_hashtag=' +
-    encodeURIComponent('あなたのいいところ') +
+    encodeURIComponent('あなたにおすすめの夕飯') +
     '&ref_src=twsrc%5Etfw';
   anchor.setAttribute('href', hrefValue);
   anchor.className = 'twitter-hashtag-button';
   anchor.setAttribute('data-text', result);
-  anchor.innerText = 'Tweet #あなたのいいところ';
+  anchor.innerText = 'Tweet #あなたにおすすめの夕飯';
   tweetDivided.appendChild(anchor);
 
   // widgets.js の設定
